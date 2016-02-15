@@ -1,0 +1,206 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{casual}
+\moderncvcolor{black}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+\definecolor{blue}{rgb}{0.0,0.5,1.0}
+\definecolor{orange}{rgb}{1.0,0.55,0.0}
+\definecolor{green}{rgb}{0,0.8,0.25}
+\definecolor{DarkOrchid}{rgb}{0.6, 0.2, 0.8}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[inner=2.4cm,outer=2.4cm,top=2cm,scale=0.75]{geometry}
+\usepackage{lscape}
+\usepackage{pgfgantt}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage[english]{babel}
+%\usepackage[]{hyperref}
+
+%% Personal data
+\firstname{Cha\"im}
+\familyname{De Mulder}
+\title{}
+\address{Johan Daisnestraat 26}{9000 Gent}
+\mobile{+32 479 74 55 02}
+\email{chaim.demulder@ugent.be}
+%\homepage{www.johndoe.com}
+\extrainfo{Born 27/3/1991 in Ghent}
+\photo[76pt][0.8pt]{ChaimDeMulderbis}
+%\quote{Some quote (optional)}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{orange!10}{
+	\begin{minipage}{\textwidth}
+		\section{\textcolor{orange}{\textbf{Experience}}}
+		\cventry{15/10/2014--present}{Research Assistant}{Ghent University, Faculty of Bioscience engineering, Department of Mathematical Modeling, Statistics and Bioinformatics, BIOMATH group (Model based bioprocess analysis and optimisation)}{}{}{}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoUGent.pdf}}}{\textbf{Projects} \small}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoBIWA}}}{\textbf{Other responsabilities:}\newline \small 
+		$\bullet$ Active member of the Belgian Division of the International Water Association (B-IWA): maintenance of \href{http://www.b-iwa.be}{website}, \href{https://www.linkedin.com/groups?mostRecent=&gid=3760023&trk=my_groups-tile-flipgrp}{LinkedIn}- and \href{https://twitter.com/BelgianIWA}{Twitter}-account.\newline
+		$\bullet$ Coordinator of the first B-IWA nocturnal (\href{http://www.b-iwa.be/node/177}{www.b-iwa.be/nocturnal}), May 19$^{th}$ 2015.
+		}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.10\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/IWA}}}{\small
+		$\bullet$ Co-organizer of the second B-IWA nocturnal (), May 18$^{th}$ 2016.\newline
+		$\bullet$ Co-organizer of an IWA YWP Workshop (Aug 29 - 30, 2015)\newline
+		$\bullet$ Assist in the courses 
+		} 
+		%\cvitem{\textcolor{green}{\underline{Skills}}}{WEST programming, organisatory skills}
+		
+		\vspace{1.cm}
+		%\vfill		
+		
+		%\cventry{20/8/2014--12/11/2014}{PhD-scholarship application}{Ghent University, Faculty of Bioscience engineering, Department of Mathematical Modeling, Statistics and Bioinformatics, BIOMATH group (Model based bioprocess analysis and optimisation) and LabMET (Laboratory for Microbial and Environmental Technolgy)}{}{}{}
+		%\cvitem{Project title}{Partial nitritation/anammox in mainstream: development based on hydrodynamic and kinetic modeling}
+		%\cvitem{Project description}{\small Different control strategies to obtain Partial nitritation/anammox (PN/A) already exist in full-scale sidestream applications. In mainstream municipal wastewater treatment however, full-scale application has not been achieved, mainly due to hydrodynamic reactor-heterogeneity. The coupling of hydrodynamics (using CFD) and biokinetics (using established wastewater treatment models) offers a powerful way to gain insight in their interaction, and to move towards more solid design and control strategies, making full-scale PN/A implementation possible.}
+		%\cvitem{\textcolor{green}{\underline{Skills}}}{Project preparation consisted of extensive literature research concerning CFD, wastewater treatment modeling, the PN/A process, the A/B-proces and multiple trial defenses}
+		
+		\cventry{15/7/2013--6/9/2013}{Internship in combination with master thesis}{DC Water, Research and Development Department}{Washington DC, USA}{}{} 
+		%\cvitem{Title}{Researcher/MSc Student}
+		%\cvitem{Description}{}
+		%\cvitem{\textcolor{green}{\underline{Skills}}}{Operating successfully in a research working environment, team-work, critical analysis of research results}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoDCWater.png}}}{\textbf{Project abstract:} \small Batch experiments were conducted under different conditions to obtain AOB and NOB oxygen half-saturation constants through parameter estimation using a specific model describing the experimental procedure. Using the obtained values, relations that indicate conditions under which AOB would outcompete NOB were sought for, potentially making energy-efficient N-removal through the anammox process possible.}
+		
+		\vspace{1.cm}
+		%\vfill
+		
+		\cventry{5/7/2012--31/8/2012}{IAESTE Internship}{Aalto University, Department of Biotechnnology and Chemical Technology}{Espoo, Finland}{}{} 
+		%\cvitem{Title}{Research assistant}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.13\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoAalto}}}{\textbf{Project abstract:} \small Catalysts used in the dehydration of xylose to furfural were characterized using micro-scale reactors, titration experiments and sugar-adsorption measurements.}
+		%\cvitem{\textcolor{green}{\underline{Skills}}}{Working independently, soft/social skills: patience, open mind, communication}
+		%\vfill
+	\end{minipage}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{blue!10}{
+	\begin{minipage}[]{\textwidth}
+		\section{\textcolor{blue}{\textbf{Education}}}
+		%\cventry{2014--present}{PhD in Bio-Science Engineering: 	Environmental Technology}{Ghent University}{}{}{}
+		\cventry{2012--2014}{Master in Bio-Science Engineering: Environmental Technology}{Ghent University}{}{}{}
+		\cvitem{}{\textbf{MSc Thesis:} Impact of intrinsic and extrinsic parameters on the oxygen kinetic parameters of Ammonia and Nitrite Oxidizing Bacteria}
+		%\cvitem{University}{Ghent University}
+		\cvitem{}{\textbf{Research group:} LabMET (Laboratory for Microbial and Environmental Technolgy) \& BIOMATH (Model-based Bioprocess Analysis and Optimisation)}
+		%\cvitem{}{\textbf{Abstract:}\\ \small Batch experiments were conducted under different conditions to obtain AOB and NOB oxygen half-saturation constants through parameter estimation using a specific model describing experimental procedure. Using the obtained values, relations that indicate conditions under which AOB would outcompete NOB were sought for, making energy-efficient N-removal through anammox possible.}
+		
+		\cventry{2009--2012}{Bachelor in Bio-Science Engineering: Environmental Technology}{Ghent University}{}{}{} 
+		\cvitem{}{\textbf{BSc Thesis:} Integrated grey water systems in city renovation and development projects}
+		%\cvitem{University}{Ghent University}
+		\cvitem{}{\textbf{Department:} Biosystems engineering }
+		%\cvitem{}{\textbf{Abstract:}\\ \small Batch experiments were conducted under different conditions to obtain AOB and NOB oxygen half-saturation constants through parameter estimation using a specific model describing experimental procedure. Using the obtained values, relations that indicate conditions under which AOB would outcompete NOB were sought for, making energy-efficient N-removal through anammox possible.}
+		
+		%\cventry{2003--2009}{Secondary school degree}{OLV-College Campus Bevegem, Zottegem}{}{}{Latin-Mathematics}  % arguments 3 to 6 can be left empty
+		%\cvitem{title}{ \emph{Title} }
+		%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+		%\cvdoubleitem{category X}{XXX, YYY, ZZZ}{category Y}{XXX, YYY, ZZZ}
+		%\cvlistitem{Item 1}
+		%\cvlistdoubleitem{Item 2}{Item 3}
+		%% ...
+	\end{minipage}
+}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{green!10}{
+	\begin{minipage}{\textwidth}
+		\section{\textcolor{green}{\textbf{Extra-curricular}}}
+		\cvitem{}{\textbf{IAESTE}}
+		\cvitem{2015-2016}{LC Ghent Vice-President \& Summer Reception Officer}
+		\cvitem{}{\small Attending conferences, jobraising, support within regional IAESTE groups (Connect Region), general support. Organizing activities for incoming trainees.\normalsize}
+		\cvitem{2014-2015}{LC Ghent supporting member \& Summer Reception Officer}
+		\cvitem{}{\small Design of IAESTE T-shirts, presenting IAESTE to companies, jobraising. Organizing activities for incoming trainees. \normalsize}
+		\cvitem{2013-2014}{LC Ghent Secretary}
+		\cvitem{}{\small Responsible for making notes during meetings and writing the meeting reports. Jobraising. \normalsize}
+		
+		\cvitem{}{\textbf{Sports}}
+		\cvitem{2006-present}{Athletics (recreational and competition)}
+		\cvitem{}{\textbf{General interests}}
+		\cvitem{}{Music, climate related, environmental and social issues, Scandinavian culture}
+		%\cvitem{}{Open Source initiatives}
+		%\cvitem{}{Climate related and environmental issues}
+	\end{minipage}
+}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{DarkOrchid!10}{
+	\begin{minipage}{\textwidth}
+		\section{\textcolor{DarkOrchid}{Skills}}
+		\cvitem{Software}{}
+		\vspace{-.55cm}
+		\cvlistitem{Advanced: \LaTeX, WEST (Mike by DHI), Python}
+		\cvlistitem{Basic: MS Office, , OpenFOAM, Matlab - Simulink, Inkscape, command line tools}
+		\cvitem{Soft skills}{}
+		\vspace{-.55cm}
+		\cvlistitem{Social and open-minded}
+		%\cvlistitem{Team-worker}
+		\cvlistitem{Enthusiastic, engaged, motivated}
+		\cvitem{Languages}{}
+		\vspace{-.55cm}
+		\cvlistitem{Native: Dutch}
+		\cvlistitem{Fluent: English}
+		\cvlistitem{Basic: French, Swedish}
+	\end{minipage}
+}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\begin{ganttchart}[
+		hgrid=true,
+		vgrid=true,
+		y unit title=0.8cm,
+		y unit chart=0.5cm,
+		x unit=0.8cm,
+		bar1/.style={bar/.append style={fill=blue}},
+		bar2/.style={bar/.append style={fill=orange}},
+		bar3/.style={bar/.append style={fill=green}}
+		]{1}{12}
+		\scriptsize
+		\ganttset{group height=0.5cm}
+		\gantttitle{2010}{1} \gantttitle{2011}{1} \gantttitle{2012}{2} \gantttitle{2013}{2} \gantttitle{2014}{2} \gantttitle{2015}{2} \gantttitle{2016}{2}\\
+		\textcolor{blue}{\ganttbar[bar1]{Higher Education}{1}{7}}\\
+		\textcolor{orange}{\ganttbar[bar2]{IAESTE Internship}{4}{4}}\\
+		\textcolor{orange}{\ganttbar[bar2]{DC Water Internship}{6}{6}}\\
+		\textcolor{orange}{\ganttbar[bar2]{Research Assistant}{8}{11}}\\
+		\textcolor{orange}{\ganttbar[bar2]{PhD Candidate}{12}{12}}\\
+		\textcolor{green}{\ganttbar[bar3]{IAESTE Member}{6}{12}}\\
+		%\textcolor{green}{\ganttbar[bar3]{IAESTE support}{14}{16}}\\
+		%\textcolor{green}{\ganttbar[bar3]{IAESTE Vice President}{14}{16}}\\		
+		\textcolor{green}{\ganttbar[bar3]{Athletics}{1}{12}}
+		\normalsize
+	\end{ganttchart}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Personal}
+%\cvitem{}{I am a \textbf{motivated and enthusiastic} young man, looking for a \textbf{challenging and diversified} job. During both my working experiences so far, I found that contact with colleagues is something I really appreciate. I am convinced that \textbf{working in a team} with people of different backgrounds can yield better results and more creative engineering solutions.\newline Since I believe I have \textbf{strong values}, I am looking for an employer whose vision I can easily identify with. It goes without saying that I will be even more eager to show a \textbf{committed engagement} working for a company that appeals to me.}
+
+%Obviously, I am ready to show a \textbf{commited engagement} in such a context. }
+%\cvitem{Looking for}{Challenging and diversified job, team-work, employer vision and mission I can identify with}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Publications}
+%\nocite{*}
+\nocite{Seuntjens2015}
+\nocite{Rehman2015b}
+\nocite{Seuntjens2014}
+%\biboptions{sort&compress}
+\bibliographystyle{bibliodutch} %of bibliodutch, apalike, ieeetr, plainnat...
+\bibliography{./CVbiblio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Languages}
+%\cvitem{Native}{Dutch}
+%\cvitem{Fluent}{English}
+%\cvitem{Basic}{French}
+
+%\bibliography{publications}
+\end{document}

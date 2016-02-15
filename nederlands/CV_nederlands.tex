@@ -1,0 +1,205 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{casual}
+\moderncvcolor{black}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+\definecolor{blue}{rgb}{0.0,0.5,1.0}
+\definecolor{orange}{rgb}{1.0,0.55,0.0}
+\definecolor{green}{rgb}{0,0.8,0.25}
+\definecolor{DarkOrchid}{rgb}{0.6, 0.2, 0.8}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+
+%% Adjust the page margins
+\usepackage[inner=2.4cm,outer=2.4cm,top=2cm,bottom=3.0cm,scale=0.75]{geometry}
+\usepackage{lscape}
+\usepackage{pgfgantt}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage[dutch]{babel}
+%\usepackage[]{hyperref}
+
+%% Personal data
+\firstname{Cha\"im}
+\familyname{De Mulder}
+\title{}
+\address{Johan Daisnestraat 26}{9000 Gent}
+\mobile{+32 479 74 55 02}
+\email{chaim.demulder@ugent.be}
+%\homepage{www.johndoe.com}
+\extrainfo{Geboren 27/3/1991 te Gent}
+\photo[70pt][0.9pt]{ChaimDeMulderbis}
+%\quote{Some quote (optional)}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{orange!10}{
+	\begin{minipage}{\textwidth}
+		\section{\textcolor{orange}{\textbf{Relevante ervaring}}}
+		\cventry{15/10/2014--heden}{Doctoraatsstudent/onderzoeksassistent}{Universiteit Gent, Faculteit Bio-Ingenieurswetenschappen, Department Wiskundige Modellering, Statistiek en Bioinformatica, BIOMATH onderzoeksgroep (Modelgebaseerde analyse en optimalisatie van bioprocessen)}{}{}{}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.10\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoUGent.pdf}}}{\textbf{Projecten:} \small Sinds tewerkstelling in oktober 2014 werd op verschillende onderzoeksvlakken gewerkt. Als eerste werd in WEST een holistisch ASM-type model opgesteld dat een recent gepubliceerd High-Rate Activated Sludge (HRAS) procesmodel combineert met een tweestaps nitrificatiemodel. Ten tweede werd gekeken naar de lag-fase die wordt vastgesteld in de groei van bepaalde nitrificerende micro-organismen bij overgang van een anoxisch naar een aeroob milieu. Een model om dit proces te beschrijven werd geïmplementeerd in python. Ten derde werden zowel een preliminair als een meer gedetailleerd CFD-model van een afvalwaterzuiveringsinstallatie in Breda, NL opgesteld in OpenFOAM. Dit CFD-model werd reeds gekoppeld met het ASM1-model, hoewel verder onderzoek nodig is naar het precieze gedrag van dit gekoppeld model. Als laatste onderzoeksonderdeel werd gekeken naar mogelijkheden voor een effici\"ent datamanagement 
+		}
+		\cvitem{\raisebox{-\height}{\centering\includegraphics[width=0.10\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoBIWA}}}{
+			\textbf{Andere verantwoordelijkheden:}\newline \small 
+			$\bullet$ Actief lid van de Belgian branch of the International Water Association (B-IWA): onderhoud van de \href{http://www.b-iwa.be}{website}, \href{https://www.linkedin.com/groups?mostRecent=&gid=3760023&trk=my_groups-tile-flipgrp}{LinkedIn}- en \href{https://twitter.com/BelgianIWA}{Twitter}-account.
+			}
+		\cvitem{
+			\raisebox{-\height}{
+				\includegraphics[width=0.08\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/IWA.png}}
+				}{
+				\small
+				$\bullet$ Coordinator van de eerste B-IWA nocturne (\href{http://www.b-iwa.be/node/177}{www.b-iwa.be/nocturnal}), 19 mei 2015.\newline
+				$\bullet$ Co-organisatie van een \href{http://www.iwarr2015.org/content/young-professionals-workshop-building-pipelines-resource-recovery}{IWA Young Water Professionals Workshop}, 29-30/8/2015\newline
+				$\bullet$ Assistentie bij de vakken Seminarie en Modelling and Control of Wastewater Treatment Plants (logistieke voorbereiding, voorbereiding pc-practica, bijlopen tijdens de practica)
+				}
+		
+		
+		%\cvitem{\textcolor{green}{\underline{Skills}}}{WEST programming, organisatory skills}
+		
+		%\vspace{1.cm}
+		%\vfill		
+		
+		%\cventry{20/8/2014--12/11/2014}{PhD-scholarship application}{Ghent University, Faculty of Bioscience engineering, Department of Mathematical Modeling, Statistics and Bioinformatics, BIOMATH group (Model based bioprocess analysis and optimisation) and LabMET (Laboratory for Microbial and Environmental Technolgy)}{}{}{}
+		%\cvitem{Project title}{Partial nitritation/anammox in mainstream: development based on hydrodynamic and kinetic modeling}
+		%\cvitem{Project description}{\small Different control strategies to obtain Partial nitritation/anammox (PN/A) already exist in full-scale sidestream applications. In mainstream municipal wastewater treatment however, full-scale application has not been achieved, mainly due to hydrodynamic reactor-heterogeneity. The coupling of hydrodynamics (using CFD) and biokinetics (using established wastewater treatment models) offers a powerful way to gain insight in their interaction, and to move towards more solid design and control strategies, making full-scale PN/A implementation possible.}
+		%\cvitem{\textcolor{green}{\underline{Skills}}}{Project preparation consisted of extensive literature research concerning CFD, wastewater treatment modeling, the PN/A process, the A/B-proces and multiple trial defenses}
+		
+		\cventry{15/7/2013--6/9/2013}{Stage in combinatie met master thesis}{DC Water, Research and Development Department}{Washington DC, USA}{}{} 
+		%\cvitem{Title}{Researcher/MSc Student}
+		%\cvitem{Description}{}
+		%\cvitem{\textcolor{green}{\underline{Skills}}}{Operating successfully in a research working environment, team-work, critical analysis of research results}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.10\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoDCWater.png}}}{\textbf{Projectabstract:} \small Batchexperimenten werden uitgevoerd onder verschillende omstandigheden om zuurstofhalfsaturatieco\"effici\"enten van Ammonium- en Nitriet- Oxiderende Bacteri\"en (resp. AOB en NOB) te verkrijgen met behulp van modelmatige parameterschatting. Op basis van de verkregen waarden werd getracht een verband te zoeken tussen deze co\"effici\"enten en slibcondities zoals deeltjesgrootte en concentratie. Het uiteindelijke doel was om op die manier condities te vinden waaronder AOB de competitie met NOB winnen.}		
+		%\vspace{1.cm}
+		%\vfill
+		
+		\cventry{5/7/2012--31/8/2012}{IAESTE Stage}{Aalto University, Departement Biotechnnologie en Chemische Technologie}{Espoo, Finland}{}{} 
+		%\cvitem{Title}{Research assistant}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.10\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoAalto}}}{\textbf{Projectabstract:} \small Verschillende katalysatoren, gebruikt bij de dehydratatie van xylose naar furfural, werden gekarakteriseerd door gebruik te maken van een micro-schaal reactor, titratie-experimenten, Raman-spectroscopie en suikeradsorptiemetingen.}
+		%\cvitem{\textcolor{green}{\underline{Skills}}}{Working independently, soft/social skills: patience, open mind, communication}
+		%\vfill
+	\end{minipage}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{blue!10}{
+	\begin{minipage}[]{\textwidth}
+		\section{\textcolor{blue}{\textbf{Opleiding}}}
+		%\cventry{2014--present}{PhD in Bio-Science Engineering: 	Environmental Technology}{Ghent University}{}{}{}
+		\cventry{2012--2014}{Master in de Bio-Ingenieurswetenschappen: Milieutechnologie}{Universiteit Gent}{}{}{}
+		\cvitem{}{\textbf{Masterproef:} Impact of intrinsic and extrinsic parameters on the oxygen kinetic parameters of Ammonia and Nitrite Oxidizing Bacteria}
+		%\cvitem{University}{Ghent University}
+		\cvitem{}{\textbf{Onderzoeksgroep:} LabMET (Laboratory for Microbial and Environmental Technolgy) \& BIOMATH (Model-based Bioprocess Analysis and Optimisation)}
+		%\cvitem{}{\textbf{Abstract:}\\ \small Batch experiments were conducted under different conditions to obtain AOB and NOB oxygen half-saturation constants through parameter estimation using a specific model describing experimental procedure. Using the obtained values, relations that indicate conditions under which AOB would outcompete NOB were sought for, making energy-efficient N-removal through anammox possible.}
+		
+		\cventry{2009--2012}{Bachelor in de Bio-Ingenieurswetenschappen: Milieutechnologie}{Universteit Gent}{}{}{} 
+		\cvitem{}{\textbf{Bachelorproef:} Ge\"integreerde grijswatersystemen in stadsvernieuwings- en ontwikkelingsprojecten.}
+		%\cvitem{University}{Ghent University}
+		\cvitem{}{\textbf{Departement:} Biosysteemtechniek }
+		%\cvitem{}{\textbf{Abstract:}\\ \small Batch experiments were conducted under different conditions to obtain AOB and NOB oxygen half-saturation constants through parameter estimation using a specific model describing experimental procedure. Using the obtained values, relations that indicate conditions under which AOB would outcompete NOB were sought for, making energy-efficient N-removal through anammox possible.}
+		
+		%\cventry{2003--2009}{Secondary school degree}{OLV-College Campus Bevegem, Zottegem}{}{}{Latin-Mathematics}  % arguments 3 to 6 can be left empty
+		%\cvitem{title}{ \emph{Title} }
+		%\cvitemwithcomment{Language 1}{Skill level}{Comment}
+		%\cvdoubleitem{category X}{XXX, YYY, ZZZ}{category Y}{XXX, YYY, ZZZ}
+		%\cvlistitem{Item 1}
+		%\cvlistdoubleitem{Item 2}{Item 3}
+		%% ...
+	\end{minipage}
+}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{green!10}{
+	\begin{minipage}{\textwidth}
+		\section{\textcolor{green}{\textbf{Extra-curriculair}}}
+		\cvitem{2015-2016}{\textbf{IAESTE} LC Gent: Vice-president}
+		\cvitem{}{Taak: \small Deelnemen aan het jobraisen, ontwerp business cards, algemene ondersteuning. \normalsize}
+		\cvitem{2014-2015}{\textbf{IAESTE} LC Gent: Ondersteunend lid}
+		\cvitem{}{Taak: \small Design IAESTE T-shirts, IAESTE introduceren bij bedrijven aan de hand van presentaties; deelnemen aan het jobraisen}
+		\cvitem{2013-2014}{\textbf{IAESTE} LC Gent: Secretaris}
+		\cvitem{}{Taak: \small Verantwoordelijk voor het nemen van notities en het maken van vergaderrapporten; deelnemen aan het jobraisen. \normalsize}
+		\cvitem{2006-heden}{Atletiek (recreatief en competitie)}
+		\cvitem{Algemene interesses}{Muziek; klimaat-, milieu- en sociaal gerelateerde issues}
+		%\cvitem{}{Open Source initiatives}
+		%\cvitem{}{Climate related and environmental issues}
+	\end{minipage}
+}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\colorbox{DarkOrchid!10}{
+	\begin{minipage}{\textwidth}
+		\section{\textcolor{DarkOrchid}{Vaardigheden}}
+		\cvitem{Software}{}
+		\vspace{-.55cm}
+		\cvlistitem{Ervaren: \LaTeX, WEST (Mike by DHI), OpenFOAM, Python}
+		\cvlistitem{Basis: MS Office, Matlab - Simulink, Inkscape, Drupal, command line tools}
+		\cvitem{Soft skills}{}
+		\vspace{-.55cm}
+		\cvlistitem{Sociaal en open-minded}
+		%\cvlistitem{Team-worker}
+		\cvlistitem{Enthousiast, gemotiveerd}
+		\cvitem{Talen}{}
+		\vspace{-.55cm}
+		\cvlistitem{Moedertaal: Nederlands}
+		\cvlistitem{Vlot: Engels}
+		\cvlistitem{Basis: Frans, Zweeds}
+	\end{minipage}
+}
+\vfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Overzicht}
+\begin{center}
+	\begin{ganttchart}[
+		hgrid=true,
+		vgrid=true,
+		y unit title=0.8cm,
+		y unit chart=0.5cm,
+		x unit=0.7cm,
+		bar1/.style={bar/.append style={fill=blue}},
+		bar2/.style={bar/.append style={fill=orange}},
+		bar3/.style={bar/.append style={fill=green}}
+		]{1}{18}
+		\ganttset{group height=0.5cm}
+		\gantttitle{\scriptsize{2010}}{1} \gantttitle{\scriptsize{2011}}{1} \gantttitle{2012}{4} \gantttitle{2013}{4} \gantttitle{2014}{4} \gantttitle{2015}{4}\\
+		\textcolor{blue}{\ganttbar[bar1]{Bachelor}{1}{4}}\\
+		\textcolor{blue}{\ganttbar[bar1]{Master}{6}{8}\ganttbar[bar1]{}{10}{12}}\\
+		\textcolor{orange}{\ganttbar[bar2]{IAESTE Stage}{5}{5}}\\
+		\textcolor{orange}{\ganttbar[bar2]{DC Water Stage}{9}{9}}\\
+		\textcolor{orange}{\ganttbar[bar2]{Onderzoeksassistent}{14}{18}}\\
+		\textcolor{green}{\ganttbar[bar3]{IAESTE}{10}{18}}\\
+		\textcolor{green}{\ganttbar[bar3]{Atletiek}{1}{18}}
+	\end{ganttchart}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Personal}
+%\cvitem{}{I am a \textbf{motivated and enthusiastic} young man, looking for a \textbf{challenging and diversified} job. During both my working experiences so far, I found that contact with colleagues is something I really appreciate. I am convinced that \textbf{working in a team} with people of different backgrounds can yield better results and more creative engineering solutions.\newline Since I believe I have \textbf{strong values}, I am looking for an employer whose vision I can easily identify with. It goes without saying that I will be even more eager to show a \textbf{committed engagement} working for a company that appeals to me.}
+
+%Obviously, I am ready to show a \textbf{commited engagement} in such a context. }
+%\cvitem{Looking for}{Challenging and diversified job, team-work, employer vision and mission I can identify with}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Publications}
+%\nocite{*}
+\nocite{Seuntjens2015}
+\nocite{Rehman2015b}
+\nocite{Seuntjens2014}
+%\biboptions{sort&compress}
+\bibliographystyle{bibliodutch} %of bibliodutch, apalike, ieeetr, plainnat...
+\bibliography{./CVbiblio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Languages}
+%\cvitem{Native}{Dutch}
+%\cvitem{Fluent}{English}
+%\cvitem{Basic}{French}
+
+%\bibliography{publications}
+\end{document}
