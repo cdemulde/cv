@@ -5,6 +5,7 @@
 \moderncvcolor{black}
 \renewcommand{\familydefault}{\sfdefault}
 \nopagenumbers{}
+\newcommand{\tab}{\hspace{0.3cm}}
 
 \definecolor{blue}{rgb}{0.0,0.5,1.0}
 \definecolor{orange}{rgb}{1.0,0.55,0.0}
@@ -21,7 +22,7 @@
 \usepackage{xcolor}
 \usepackage{natbib}
 \usepackage[english]{babel}
-%\usepackage[]{hyperref}
+%\AfterPreamble{\hypersetup{colorlinks=false,linkbordercolor=red,pdfborderstyle={/S/U/W 1}}}
 
 %% Personal data
 \firstname{Cha\"im}
@@ -45,17 +46,22 @@
 \colorbox{orange!10}{
 	\begin{minipage}{\textwidth}
 		\section{\textcolor{orange}{\textbf{Experience}}}
-		\cventry{15/10/2014--present}{Research Assistant}{Ghent University, Faculty of Bioscience engineering, Department of Mathematical Modeling, Statistics and Bioinformatics, BIOMATH group (Model based bioprocess analysis and optimisation)}{}{}{}
-		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoUGent.pdf}}}{\textbf{Projects} \small}
-		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoBIWA}}}{\textbf{Other responsabilities:}\newline \small 
-		$\bullet$ Active member of the Belgian Division of the International Water Association (B-IWA): maintenance of \href{http://www.b-iwa.be}{website}, \href{https://www.linkedin.com/groups?mostRecent=&gid=3760023&trk=my_groups-tile-flipgrp}{LinkedIn}- and \href{https://twitter.com/BelgianIWA}{Twitter}-account.\newline
-		$\bullet$ Coordinator of the first B-IWA nocturnal (\href{http://www.b-iwa.be/node/177}{www.b-iwa.be/nocturnal}), May 19$^{th}$ 2015.
+		\cventry{15/10/2014--present}
+			{Research Assistant}{Ghent University, Faculty of Bioscience engineering, Department of Mathematical Modeling, Statistics and Bioinformatics, BIOMATH group (Model based bioprocess analysis and optimisation)}{}{}{}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoUGent.pdf}}}
+			{\textbf{Projects} \small}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/LogoBIWA}}}
+			{\textbf{Other responsabilities:}\newline \small 
+			$\bullet$ Active member of the Belgian Division of the International Water Association (B-IWA):\newline
+			$\circ$ Maintenance of \href{http://www.b-iwa.be}{website}, \href{https://www.linkedin.com/groups?mostRecent=&gid=3760023&trk=my_groups-tile-flipgrp}{\underline{LinkedIn}}- and \href{https://twitter.com/BelgianIWA}{\underline{Twitter}}-account.\newline
+			$\circ$ Coordinator of the  \href{http://www.b-iwa.be/node/177}{\underline{first B-IWA nocturnal}}, May 19$^{th}$ 2015.
 		}
-		\cvitem{\raisebox{-\height}{\includegraphics[width=0.10\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/IWA}}}{\small
-		$\bullet$ Co-organizer of the second B-IWA nocturnal (), May 18$^{th}$ 2016.\newline
-		$\bullet$ Co-organizer of an IWA YWP Workshop (Aug 29 - 30, 2015)\newline
-		$\bullet$ Assist in the courses 
-		} 
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.10\textwidth]{/users/chaimdemulder/Desktop/Doctoraat/Figures/Logos/IWA}}}
+		{\small
+			$\circ$ Co-organizer of the  \href{http://www.b-iwa.be/biwa_nocturnal_coming}{\underline{second B-IWA nocturnal}}, May 18$^{th}$ 2016.\newline
+			$\bullet$ Co-organizer of an IWA YWP Workshop (Aug 29 - 30, 2015)\newline
+			$\bullet$ Assist in the course Modeling and Control of Wastewater Treatment Plants
+		}
 		%\cvitem{\textcolor{green}{\underline{Skills}}}{WEST programming, organisatory skills}
 		
 		\vspace{1.cm}
@@ -90,13 +96,13 @@
 		\cventry{2012--2014}{Master in Bio-Science Engineering: Environmental Technology}{Ghent University}{}{}{}
 		\cvitem{}{\textbf{MSc Thesis:} Impact of intrinsic and extrinsic parameters on the oxygen kinetic parameters of Ammonia and Nitrite Oxidizing Bacteria}
 		%\cvitem{University}{Ghent University}
-		\cvitem{}{\textbf{Research group:} LabMET (Laboratory for Microbial and Environmental Technolgy) \& BIOMATH (Model-based Bioprocess Analysis and Optimisation)}
+		%\cvitem{}{\textbf{Research group:} LabMET (Laboratory for Microbial and Environmental Technolgy) \& BIOMATH (Model-based Bioprocess Analysis and Optimisation)}
 		%\cvitem{}{\textbf{Abstract:}\\ \small Batch experiments were conducted under different conditions to obtain AOB and NOB oxygen half-saturation constants through parameter estimation using a specific model describing experimental procedure. Using the obtained values, relations that indicate conditions under which AOB would outcompete NOB were sought for, making energy-efficient N-removal through anammox possible.}
 		
 		\cventry{2009--2012}{Bachelor in Bio-Science Engineering: Environmental Technology}{Ghent University}{}{}{} 
 		\cvitem{}{\textbf{BSc Thesis:} Integrated grey water systems in city renovation and development projects}
 		%\cvitem{University}{Ghent University}
-		\cvitem{}{\textbf{Department:} Biosystems engineering }
+		%\cvitem{}{\textbf{Department:} Biosystems engineering }
 		%\cvitem{}{\textbf{Abstract:}\\ \small Batch experiments were conducted under different conditions to obtain AOB and NOB oxygen half-saturation constants through parameter estimation using a specific model describing experimental procedure. Using the obtained values, relations that indicate conditions under which AOB would outcompete NOB were sought for, making energy-efficient N-removal through anammox possible.}
 		
 		%\cventry{2003--2009}{Secondary school degree}{OLV-College Campus Bevegem, Zottegem}{}{}{Latin-Mathematics}  % arguments 3 to 6 can be left empty
@@ -115,11 +121,11 @@
 		\section{\textcolor{green}{\textbf{Extra-curricular}}}
 		\cvitem{}{\textbf{IAESTE}}
 		\cvitem{2015-2016}{LC Ghent Vice-President \& Summer Reception Officer}
-		\cvitem{}{\small Attending conferences, jobraising, support within regional IAESTE groups (Connect Region), general support. Organizing activities for incoming trainees.\normalsize}
+		\cvitem{}{\small Attending conferences, jobraising, support within international IAESTE groups (Connect Region), general support. Organizing activities for incoming trainees.\normalsize}
 		\cvitem{2014-2015}{LC Ghent supporting member \& Summer Reception Officer}
 		\cvitem{}{\small Design of IAESTE T-shirts, presenting IAESTE to companies, jobraising. Organizing activities for incoming trainees. \normalsize}
 		\cvitem{2013-2014}{LC Ghent Secretary}
-		\cvitem{}{\small Responsible for making notes during meetings and writing the meeting reports. Jobraising. \normalsize}
+		\cvitem{}{\small Responsible for making notes during meetings and writing the meeting reports, jobraising. \normalsize}
 		
 		\cvitem{}{\textbf{Sports}}
 		\cvitem{2006-present}{Athletics (recreational and competition)}
@@ -162,19 +168,19 @@
 		bar1/.style={bar/.append style={fill=blue}},
 		bar2/.style={bar/.append style={fill=orange}},
 		bar3/.style={bar/.append style={fill=green}}
-		]{1}{12}
+		]{1}{11}
 		\scriptsize
 		\ganttset{group height=0.5cm}
-		\gantttitle{2010}{1} \gantttitle{2011}{1} \gantttitle{2012}{2} \gantttitle{2013}{2} \gantttitle{2014}{2} \gantttitle{2015}{2} \gantttitle{2016}{2}\\
+		\gantttitle{2010}{1} \gantttitle{2011}{1} \gantttitle{2012}{2} \gantttitle{2013}{2} \gantttitle{2014}{2} \gantttitle{2015}{2} \gantttitle{2016}{1}\\
 		\textcolor{blue}{\ganttbar[bar1]{Higher Education}{1}{7}}\\
 		\textcolor{orange}{\ganttbar[bar2]{IAESTE Internship}{4}{4}}\\
 		\textcolor{orange}{\ganttbar[bar2]{DC Water Internship}{6}{6}}\\
-		\textcolor{orange}{\ganttbar[bar2]{Research Assistant}{8}{11}}\\
-		\textcolor{orange}{\ganttbar[bar2]{PhD Candidate}{12}{12}}\\
-		\textcolor{green}{\ganttbar[bar3]{IAESTE Member}{6}{12}}\\
+		\textcolor{orange}{\ganttbar[bar2]{Research Assistant}{8}{10}}\\
+		\textcolor{orange}{\ganttbar[bar2]{PhD Candidate}{11}{11}}\\
+		\textcolor{green}{\ganttbar[bar3]{IAESTE Member}{6}{11}}\\
 		%\textcolor{green}{\ganttbar[bar3]{IAESTE support}{14}{16}}\\
 		%\textcolor{green}{\ganttbar[bar3]{IAESTE Vice President}{14}{16}}\\		
-		\textcolor{green}{\ganttbar[bar3]{Athletics}{1}{12}}
+		\textcolor{green}{\ganttbar[bar3]{Athletics}{1}{11}}
 		\normalsize
 	\end{ganttchart}
 \end{center}
