@@ -1467,7 +1467,7 @@ FUNCTION {begin.bib}
 }
 EXECUTE {begin.bib}
 EXECUTE {init.state.consts}
-ITERATE {call.type$}
+REVERSE {call.type$}
 FUNCTION {end.bib}
 { newline$
   "\end{thebibliography}" write$ newline$
