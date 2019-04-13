@@ -20,15 +20,22 @@
 \usepackage{lscape}
 \usepackage{pgfgantt}
 \usepackage{xcolor}
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage[english]{babel}
+\usepackage[backend=biber,maxbibnames=99,dashed=false,style=authoryear,sorting=ydnt]{biblatex}%
+\DeclareNameAlias{sortname}{last-first}
+%\DeclareSortingScheme{noneyear}{
+%	\sort{\citeorder}
+%	\sort{\field{year}}
+%}
+\addbibresource{./CVbiblio.bib}
 %\AfterPreamble{\hypersetup{colorlinks=false,linkbordercolor=red,pdfborderstyle={/S/U/W 1}}}
 
 %% Personal data
 \firstname{Cha\"im}
 \familyname{De Mulder}
 \title{}
-\address{Kettingstraat 9/301}{9000 Gent}
+\address{Portugalstraat 9/301}{9000 Gent}
 \mobile{+32 479 74 55 02}
 \email{chaim.demulder@ugent.be}
 %\homepage{www.johndoe.com}
@@ -47,14 +54,13 @@
 \colorbox{orange!10}{
 	\begin{minipage}{\textwidth}
 		\section{\textcolor{orange}{\textbf{Experience}}}
-		\cventry{15/10/2015--present}{PhD Candidate}{\footnotesize Ghent University, Faculty of Bioscience engineering, Department of Data Analysis and Mathematical Modeling, BIOMATH group (Model based bioprocess analysis and optimisation)}{}{}{}
+		\cventry{Oct 2015 -- present}{PhD Candidate}{\footnotesize Ghent University, Faculty of Bioscience engineering, Department of Data Analysis and Mathematical Modeling, BIOMATH group (Model based bioprocess analysis and optimisation)}{}{}{}
 		\cvitem{\raisebox{-0.7\height}{\includegraphics[width=0.12\textwidth]{./LogoUGent.png}}}
-		{\textbf{Project}\newline
-			\small Model-based decision support, knowledge build-up and advanced modeling of the Wastewater Treatment Plant of Eindhoven, The Netherlands, in close collaboration with the operators (Waterboard De Dommel).}
+		{\small Model-based decision support, knowledge build-up and advanced modeling of the Wastewater Treatment Plant of Eindhoven, The Netherlands, in close collaboration with the operators (Waterboard De Dommel).}
 		\vspace{0.5cm}
 		
-		\cventry{15/10/2014--15/10/2015}{Research Assistant}{\footnotesize Ghent University, Faculty of Bioscience engineering, Department of Data Analysis and Mathematical Modeling, BIOMATH group (Model based bioprocess analysis and optimisation)}{}{}{}
-		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{./LogoUGent.png}}}{\textbf{Projects}\newline \small
+		\cventry{Oct. 2014 -- Oct. 2015}{Research Assistant}{\footnotesize Ghent University, Faculty of Bioscience engineering, Department of Data Analysis and Mathematical Modeling, BIOMATH group (Model based bioprocess analysis and optimisation)}{}{}{}
+		\cvitem{\raisebox{-\height}{\includegraphics[width=0.12\textwidth]{./LogoUGent.png}}}{\small
 			$\bullet$ Coupling a hydrodynamic model (using CFD) and a biokinetic model (using established wastewater treatment models) for the Wastewater Treatment Plant of Breda, The Netherlands.\newline
 			$\bullet$ Implementing a model for the simulation of the High Rate Activated Sludge Process, based on two previously described models.}
 		\vspace{0.5cm}
@@ -64,7 +70,7 @@
 		%\cvitem{Project description}{\small Different control strategies to obtain Partial nitritation/anammox (PN/A) already exist in full-scale sidestream applications. In mainstream municipal wastewater treatment however, full-scale application has not been achieved, mainly due to hydrodynamic reactor-heterogeneity. The coupling of hydrodynamics (using CFD) and biokinetics (using established wastewater treatment models) offers a powerful way to gain insight in their interaction, and to move towards more solid design and control strategies, making full-scale PN/A implementation possible.}
 		%\cvitem{\textcolor{green}{\underline{Skills}}}{Project preparation consisted of extensive literature research concerning CFD, wastewater treatment modeling, the PN/A process, the A/B-proces and multiple trial defenses}
 		
-		\cventry{15/7/2013--6/9/2013}{Internship in combination with master thesis}{\footnotesize DC Water, Research and Development Department}{\footnotesize Washington DC, USA}{}{}
+		\cventry{Jul. -- Aug. 2013}{Internship in combination with master thesis}{\footnotesize DC Water, Research and Development Department}{\footnotesize Washington DC, USA}{}{}
 		%\cvitem{Title}{Researcher/MSc Student}
 		%\cvitem{Description}{}
 		%\cvitem{\textcolor{green}{\underline{Skills}}}{Operating successfully in a research working environment, team-work, critical analysis of research results}
@@ -72,7 +78,7 @@
 		%{\textbf{Project:} \small Batch experiments under different conditions to obtain AOB and NOB oxygen half-saturation constants through parameter estimation using a specific model describing the experimental procedure.}
 		\vspace{0.5cm}
 		
-		\cventry{5/7/2012--31/8/2012}{IAESTE Internship}{\footnotesize Aalto University, Department of Biotechnnology and Chemical Technology}{\footnotesize Espoo, Finland}{}{}
+		\cventry{Jul. -- Aug. 2012}{IAESTE Internship}{\footnotesize Aalto University, Department of Biotechnnology and Chemical Technology}{\footnotesize Espoo, Finland}{}{}
 		%\cvitem{Title}{Research assistant}
 		%\cvitem{\raisebox{-\height}{\includegraphics[width=0.08\textwidth]{./LogoAalto}}}
 		%{\textbf{Project:} \small Catalysts used in the dehydration of xylose to furfural were characterized using micro-scale reactors, titration experiments and sugar-adsorption measurements.}
@@ -80,9 +86,10 @@
 		%\vfill
 		\vspace{0.5cm}
 		
-		\cventry{}{IWA involvement}{}{}{}{}
-		\cvitem{\raisebox{-\height}{\includegraphics[width=0.1\textwidth]{./IWA}}}{\small 
-		$\bullet$ Active YWP member in the board of directors of the Belgian branch of IWA (BIWA), 2015--present\newline
+		\cventry{2015--present}{IWA involvement}{}{}{}{}
+		\cvitem{{\centering\raisebox{-0.7\height}{\includegraphics[width=0.08\textwidth]{./IWA}}\\}}{\small 
+		$\bullet$ Active YWP member in the board of directors of the Belgian branch of IWA (B-IWA)\newline
+		%
 		%	$\circ$ Maintenance of \href{http://www.b-iwa.be}{\underline{website}}, \href{https://www.linkedin.com/groups?mostRecent=&gid=3760023&trk=my_groups-tile-flipgrp}{\underline{LinkedIn}}- and \href{https://twitter.com/BelgianIWA}{\underline{Twitter}}-account.\newline
 		%$\circ$ Coordinator of the first, second and third \href{http://www.b-iwa.be/node/177}{\underline{B-IWA nocturnal}}
 		$\bullet$ Organising Committee member of the IWA YWP Benelux Conference, Gent, Belgium, July 2017
@@ -126,20 +133,30 @@
 \colorbox{green!10}{
 	\begin{minipage}{\textwidth}
 		\section{\textcolor{green}{\textbf{Extra-curricular}}}
-		\cvitem{\raisebox{-\height}{\includegraphics[width=0.08\textwidth]{./iaeste_logo}}}{\textbf{IAESTE} \newline(International Association for the Exchange of Students for Technical Experience)}
-		\cvitem{2017--2018}{\textbf{Connect Region Project Coordinator}: \small Member of the Regional Management team of western Europe, day-to-day manamement of regional affairs. Responsible for several projects with participants from across the region.}
+		\cventry{2018--present}{\href{http://climate-express.be}{\textbf{Climate Express}}}{}{}{}{}
+		\cvitem{\centering\raisebox{-0.4\height}{\includegraphics[width=0.05\textwidth]{./ClimateExpress}}\\}{Voluteers for a socially just transition to a carbon-neutral society.\newline}
+		\cventry{2018--present}{\href{https://www.climateresponse.eu}{\textbf{Climate Response}}}{}{}{}{}
+		\cvitem{\centering\raisebox{-0.4\height}{\includegraphics[width=0.05\textwidth]{./ClimateResponse}}\\}{Spreading facts on Climate Change.\newline}
+		\cventry{2013--2018}{\href{https://iaeste.org}{\textbf{IAESTE}}}{}{}{}{}
+		\cvitem{\centering\raisebox{-0.5\height}{\includegraphics[width=0.05\textwidth]{./iaeste_logo}}\\}{International Association for the Exchange of Students for Technical Experience.\newline}
+		%\cvitem{2017--2018}{\textbf{Connect Region Project Coordinator}}
+		%: \small Member of the Regional Management team of western Europe, day-to-day manamement of regional affairs. Responsible for several projects with participants from across the region.
 		%\cvitem{}{ \normalsize}
-		\cvitem{2016--2017}{\textbf{LC Ghent Exchange Coordinator}: \small Board member of the Local Committee of Ghent, day-to-day management of a 25-person team of students. Resposible for international internship exchange and networking, jobraising.}
+		%\cvitem{2016--2017}{\textbf{LC Ghent Exchange Coordinator}}
+		%: \small Board member of the Local Committee of Ghent, day-to-day management of a 25-person team of students. Resposible for international internship exchange and networking, jobraising.
 	    %\cvitem{}{ \normalsize}
-		\cvitem{2015--2016}{\textbf{LC Ghent Vice-President \& Summer Reception Officer}: \small General support on local level (team management)  and within international IAESTE groups (Region of western Europe). Jobraising and organizing activities for incoming trainees.}
+		%\cvitem{2015--2016}{\textbf{LC Ghent Vice-President \& Summer Reception Officer}}
 		%\cvitem{}{\normalsize}
-		\cvitem{2014--2015}{\textbf{LC Ghent supporting member \& Summer Reception Officer}: \small Design of PR materials, presenting IAESTE to companies, jobraising. Organizing activities for incoming trainees. }
+		%: \small General support on local level (team management)  and within international IAESTE groups (Region of western Europe). Jobraising and organizing activities for incoming trainees.
+		%\cvitem{2014--2015}{\textbf{LC Ghent supporting member \& Summer Reception Officer}}
+		%: \small Design of PR materials, presenting IAESTE to companies, jobraising. Organizing activities for incoming trainees. 
 		%\cvitem{}{\normalsize}
-		\cvitem{2013--2014}{\textbf{LC Ghent Secretary}: \small Responsible for meeting reports, jobraising. }
+		%\cvitem{2013--2014}{\textbf{LC Ghent Secretary}}
+		%: \small Responsible for meeting reports, jobraising. 
 		%\cvitem{}{\normalsize}
-		\vspace{0.5cm}
+		%\vspace{0.5cm}
 		\cvitem{}{\textbf{Sports and general interests}}
-		\cvitem{2006--present}{Athletics (recreational and competition), music, board games, climate related, environmental and social issues, Nordic culture}
+		\cvitem{}{Athletics (recreational and competition), music, board games, climate related, environmental and social issues, Nordic culture.}
 		%\cvitem{}{\textbf{General interests}}
 		%\cvitem{}{Music, climate related, environmental and social issues, Scandinavian culture}
 		%\cvitem{}{Open Source initiatives}
@@ -147,6 +164,7 @@
 	\end{minipage}
 }
 \vfill
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \colorbox{DarkOrchid!10}{
 	\begin{minipage}{\textwidth}
@@ -175,23 +193,25 @@
 		%vgrid=true,
 		y unit title=0.8cm,
 		y unit chart=0.5cm,
-		x unit=0.4cm,
+		x unit=0.6cm,
 		bar1/.style={bar/.append style={fill=blue}},
 		bar2/.style={bar/.append style={fill=orange}},
 		bar3/.style={bar/.append style={fill=green}}
-		]{1}{24}
+		]{1}{16}
 		\scriptsize
 		\ganttset{group height=0.5cm}
-		\gantttitle{2010}{2} \gantttitle{2011}{2} \gantttitle{2012}{2} \gantttitle{2013}{2} \gantttitle{2014}{2} \gantttitle{2015}{4} \gantttitle{2016}{4}\gantttitle{2017}{4}\gantttitle{2018}{2}\\
-		\textcolor{blue}{\ganttbar[bar1]{Higher Education}{1}{9}}\\
-		\textcolor{orange}{\ganttbar[bar2]{IAESTE Internship}{6}{6}}\\
-		\textcolor{orange}{\ganttbar[bar2]{DC Water Internship}{8}{8}}\\
-		\textcolor{orange}{\ganttbar[bar2]{Research Assistant}{10}{13}}\\
-		\textcolor{orange}{\ganttbar[bar2]{PhD Candidate}{14}{24}}\\
-		\textcolor{green}{\ganttbar[bar3]{IAESTE Member}{7}{24}}\\
+		\gantttitle{2012}{2} \gantttitle{2013}{2} \gantttitle{2014}{2} \gantttitle{2015}{2} \gantttitle{2016}{2}\gantttitle{2017}{2}\gantttitle{2018}{2}\gantttitle{2019}{2}\\
+		\textcolor{blue}{\ganttbar[bar1]{Masters Degree}{1}{5}}\\
+		\textcolor{orange}{\ganttbar[bar2]{IAESTE Internship}{2}{2}}\\
+		\textcolor{orange}{\ganttbar[bar2]{DC Water Internship}{4}{4}}\\
+		\textcolor{orange}{\ganttbar[bar2]{Research Assistant}{6}{7}}\\
+		\textcolor{orange}{\ganttbar[bar2]{PhD Candidate}{8}{15}}\\
+		\textcolor{orange}{\ganttbar[bar2]{IWA Involvement}{7}{15}}\\
+		\textcolor{green}{\ganttbar[bar3]{IAESTE Member}{3}{13}}\\
+		\textcolor{green}{\ganttbar[bar3]{Climate Response/Express}{14}{15}}\\
 		%\textcolor{green}{\ganttbar[bar3]{IAESTE support}{14}{16}}\\
 		%\textcolor{green}{\ganttbar[bar3]{IAESTE Vice President}{14}{16}}\\		
-		\textcolor{green}{\ganttbar[bar3]{Athletics}{1}{24}}
+		\textcolor{green}{\ganttbar[bar3]{Athletics}{1}{15}}
 		\normalsize
 	\end{ganttchart}
 \end{center}
@@ -211,22 +231,25 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Publications}
+\section{\textbf{Scientific publications}}
+%\renewcommand{\section}[2]{}
+\footnotesize
+
+%\subsection{Journal papers}
 \nocite{*}
-\nocite{Seuntjens2018}
-\nocite{wwdata}
-\nocite{demulder2017}
-\nocite{Demulder2017nrrlwwtp}
-\nocite{Demulder2017ficwtm}
-\nocite{Demulder2017ica}
-\nocite{Seuntjens2016}
-\nocite{Demulder2016}
-\nocite{Seuntjens2015}
-\nocite{Rehman2015b}
-\nocite{Seuntjens2014}
+\printbibliography[type=article,title={Journal papers}]
+\printbibliography[type=inproceedings,title={Conference papers (presentations and posters)}]%,sorting=noneyear]
+\printbibliography[type=manual,title={Software}]%,sorting=noneyear]
+
+%\subsection{Conference papers}
+
+%\subsection{Software}
+%\nocitesoftware{*}
+%\printbibliography{./CVsoftware.bib}
+
 %\biboptions{sort&compress}
-\bibliographystyle{unsrt} %of bibliodutch, apalike, ieeetr, plainnat...
-\bibliography{./CVbiblio}
+%\bibliographystyle{unsrt} %of unsrt, bibliodutch, apalike, ieeetr, plainnat...
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Languages}
